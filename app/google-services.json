@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "614035952071",
+    "project_id": "ayuvya-ayurveda",
+    "storage_bucket": "ayuvya-ayurveda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614035952071:android:48d46a8ca69b6ab96909e2",
+        "android_client_info": {
+          "package_name": "com.ayushsabharwal.ayuvyaayurveda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEgel_3wNDS_UtWokdGECMbbWON74h1ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
