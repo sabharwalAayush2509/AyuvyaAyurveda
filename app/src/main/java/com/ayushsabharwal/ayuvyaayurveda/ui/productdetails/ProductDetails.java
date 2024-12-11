@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.ayushsabharwal.ayuvyaayurveda.R;
 import com.ayushsabharwal.ayuvyaayurveda.ui.cart.CartActivity;
 import com.ayushsabharwal.ayuvyaayurveda.ui.cart.CartViewModel;
-import com.ayushsabharwal.ayuvyaayurveda.ui.data.model.ProductModel;
+import com.ayushsabharwal.ayuvyaayurveda.data.model.ProductModel;
 import com.squareup.picasso.Picasso;
 
 public class ProductDetails extends AppCompatActivity {
@@ -41,9 +41,9 @@ public class ProductDetails extends AppCompatActivity {
 
         ProductModel product = (ProductModel) getIntent().getSerializableExtra("product");
         if (product != null) {
-            Picasso.get().load(product.getImageUrl()).placeholder(R.drawable.ic_launcher_foreground).error(R.drawable.ic_launcher_background).into(productImage);
+            Picasso.get().load(product.getImageUrl()).placeholder(R.drawable.ic_downloading).error(R.drawable.ic_downloading).into(productImage);
             productName.setText(product.getName());
-            productPrice.setText(String.format("$%.2f", product.getPrice()));
+            productPrice.setText(String.format("₹ %.2f", product.getPrice()));
             productDescription.setText(product.getDescription());
         }
     }

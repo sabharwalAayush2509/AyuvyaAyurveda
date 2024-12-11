@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ayushsabharwal.ayuvyaayurveda.R;
-import com.ayushsabharwal.ayuvyaayurveda.ui.data.model.ProductModel;
+import com.ayushsabharwal.ayuvyaayurveda.data.model.ProductModel;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -46,9 +46,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         ProductModel product = cartItems.get(position);
 
         holder.productName.setText(product.getName());
-        holder.productPrice.setText("$" + product.getPrice());
+        holder.productPrice.setText(String.format("₹ %.2f", product.getPrice()));
         holder.productQuantity.setText("Quantity: " + product.getQuantity());
-        Picasso.get().load(product.getImageUrl()).placeholder(R.drawable.ic_launcher_foreground).error(R.drawable.ic_launcher_background).into(holder.productImage);
+        Picasso.get().load(product.getImageUrl()).placeholder(R.drawable.ic_downloading).error(R.drawable.ic_downloading).into(holder.productImage);
     }
 
     @Override

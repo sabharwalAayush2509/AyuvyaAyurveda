@@ -1,4 +1,4 @@
-package com.ayushsabharwal.ayuvyaayurveda.ui.data.model;
+package com.ayushsabharwal.ayuvyaayurveda.data.model;
 
 import java.io.Serializable;
 

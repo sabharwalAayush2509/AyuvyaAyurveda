@@ -1,4 +1,4 @@
-package com.ayushsabharwal.ayuvyaayurveda.ui.data.repository;
+package com.ayushsabharwal.ayuvyaayurveda.data.repository;
 
 import android.support.annotation.NonNull;
 import android.util.Log;
@@ -6,7 +6,7 @@ import android.util.Log;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.ayushsabharwal.ayuvyaayurveda.ui.data.model.ProductModel;
+import com.ayushsabharwal.ayuvyaayurveda.data.model.ProductModel;
 import com.google.firebase.database.*;
 
 import java.util.ArrayList;

@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ayushsabharwal.ayuvyaayurveda.R;
-import com.ayushsabharwal.ayuvyaayurveda.ui.data.model.ProductModel;
+import com.ayushsabharwal.ayuvyaayurveda.data.model.ProductModel;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
@@ -52,9 +52,9 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         ProductModel product = products.get(position);
-        Picasso.get().load(product.getImageUrl()).placeholder(R.drawable.ic_launcher_foreground).error(R.drawable.ic_launcher_background).into(holder.productImageView);
+        Picasso.get().load(product.getImageUrl()).placeholder(R.drawable.ic_downloading).error(R.drawable.ic_downloading).into(holder.productImageView);
         holder.nameTextView.setText(product.getName());
-        holder.priceTextView.setText(String.format("$%.2f", product.getPrice()));
+        holder.priceTextView.setText(String.format("₹ %.2f", product.getPrice()));
         holder.productQuantity.setText(String.valueOf(product.getQuantity()));
 
         if (product.getIsInCart()) {

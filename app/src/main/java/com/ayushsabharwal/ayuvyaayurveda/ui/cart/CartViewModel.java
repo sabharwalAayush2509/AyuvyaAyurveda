@@ -7,8 +7,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.ayushsabharwal.ayuvyaayurveda.ui.data.model.ProductModel;
-import com.ayushsabharwal.ayuvyaayurveda.ui.data.repository.ProductRepository;
+import com.ayushsabharwal.ayuvyaayurveda.data.model.ProductModel;
+import com.ayushsabharwal.ayuvyaayurveda.data.repository.ProductRepository;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
