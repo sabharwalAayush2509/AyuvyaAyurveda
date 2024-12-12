@@ -11,21 +11,6 @@ public class ProductModel implements Serializable {
     private String name;
     private double price;
 
-    // Default constructor required for Firebase
-    public ProductModel() {
-    }
-
-    public ProductModel(String id, String name, double price, String imageUrl, String description, int quantity, boolean isInCart) {
-        this.isInCart = isInCart;
-        this.quantity = quantity;
-        this.description = description;
-        this.imageUrl = imageUrl;
-        this.id = id;
-        this.name = name;
-        this.price = price;
-    }
-
-    // Getters and setters
     public boolean getIsInCart() {
         return isInCart;
     }
@@ -46,16 +31,8 @@ public class ProductModel implements Serializable {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getImageUrl() {
         return imageUrl;
-    }
-
-    public void setImageUrl(String id) {
-        this.imageUrl = id;
     }
 
     public String getId() {
@@ -76,9 +53,5 @@ public class ProductModel implements Serializable {
 
     public double getPrice() {
         return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 }
